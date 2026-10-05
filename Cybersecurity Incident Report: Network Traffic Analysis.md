@@ -91,8 +91,7 @@ To load the webpage, the browser first looks up the website's IP address, then s
 ```
 
 ---
-
-<!-- ===================== LOG BREAKDOWN ===================== -->
+![Screenshot of the tcpdump log](https://github.com/kentbalmoria7-oss/cybersecurity-fundamentals/blob/e282e46e0d420543645e85218b4ea33322ccaded/Screenshot%202026-10-05%20152035.png?raw=true)<!-- ===================== LOG BREAKDOWN ===================== -->
 ## 🔎 Reading the tcpdump Log
 
 | # | Log Element | What It Shows |
