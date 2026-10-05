@@ -3,15 +3,15 @@
 
 # 🛡️ Cybersecurity Fundamentals Portfolio
 
-### Incident Response · Risk Management · Access Control · Security Architecture
+### Incident Response · Network Attack Analysis · Risk Management · Access Control · Security Architecture
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=900&color=00D4FF&center=true&vCenter=true&width=760&height=50&lines=NIST+CSF+%26+Risk+Assessment+Frameworks;Access+Control+%26+Privacy+Audits;Incident+Response+%26+Escalation;Secure+Network+%26+Infrastructure+Design" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=900&color=00D4FF&center=true&vCenter=true&width=760&height=50&lines=NIST+CSF+%26+Risk+Assessment+Frameworks;Packet+Analysis+%26+Network+Attack+Detection;Access+Control+%26+Privacy+Audits;Secure+Network+%26+Infrastructure+Design" alt="Typing SVG" />
 
 <br/>
 
 ![Focus](https://img.shields.io/badge/Focus-Cybersecurity%20Fundamentals-0EA5E9?style=for-the-badge&logo=shield&logoColor=white&labelColor=0D1117)
 ![Frameworks](https://img.shields.io/badge/Frameworks-NIST%20%7C%20MITRE%20ATT%26CK-1E90FF?style=for-the-badge&logo=target&logoColor=white&labelColor=0D1117)
-![Write-ups](https://img.shields.io/badge/Write--ups-8-38BDF8?style=for-the-badge&logo=gitbook&logoColor=white&labelColor=0D1117)
+![Write-ups](https://img.shields.io/badge/Write--ups-11-38BDF8?style=for-the-badge&logo=gitbook&logoColor=white&labelColor=0D1117)
 ![Status](https://img.shields.io/badge/Status-Actively%20Growing-22C55E?style=for-the-badge&logo=checkmarx&logoColor=white&labelColor=0D1117)
 
 </div>
@@ -21,9 +21,9 @@
 <!-- ===================== ABOUT ===================== -->
 ## 👋 About This Repository
 
-This repository is a collection of my cybersecurity fundamentals work: incident response, risk assessments, access control audits, and security architecture design.
+This repository is a collection of my cybersecurity fundamentals work: incident response, network attack analysis, risk assessments, access control audits, and security architecture design.
 
-My work pairs **hands-on analysis** (access log review, phishing and malware escalation, vulnerability assessment) with **governance frameworks** (NIST CSF, NIST SP 800-30, NIST SP 800-53, least privilege audits, risk registers) to protect organizational assets and keep operations resilient.
+My work pairs **hands-on analysis** (packet capture review, access log review, phishing and malware escalation, vulnerability assessment) with **governance frameworks** (NIST CSF, NIST SP 800-30, NIST SP 800-53, least privilege audits, risk registers) to protect organizational assets and keep operations resilient.
 
 > 💡 **Reading tip:** each write-up follows a similar layout: case summary, scenario, findings or design, recommendations, and skills demonstrated.
 
@@ -34,12 +34,20 @@ My work pairs **hands-on analysis** (access log review, phishing and malware esc
 
 | 🧪 Write-ups | 🧩 Domains | 🛡️ Frameworks Used |
 | :---: | :---: | :---: |
-| **8** | **4** | **NIST CSF, NIST SP 800-30, NIST SP 800-53 (AC-6), MITRE ATT&CK** |
+| **11** | **5** | **NIST CSF, NIST SP 800-30, NIST SP 800-53 (AC-6), MITRE ATT&CK** |
 
 ---
 
 <!-- ===================== PROJECT INDEX ===================== -->
 ## 📂 Project Index
+
+### 🌐 Network Attack Analysis & Hardening
+
+| Project | Category | Core Focus & Skills Demonstrated |
+| :--- | :--- | :--- |
+| [**Analyze Network Attacks: SYN Flood DoS**](./Analyze%20Network%20Attacks%20-%20SYN%20Flood%20DoS.md) | Network Attack Analysis | Reading a packet capture, identifying a TCP SYN flood from half-open connections, explaining how it exhausts web server resources, and containing it at the firewall. |
+| [**Apply OS Hardening Techniques: Brute Force & Malware Redirect Incident**](./Apply%20OS%20Hardening%20Techniques%20-%20Brute%20Force%20%26%20Malware%20Redirect%20Incident.md) | Incident Documentation / Hardening | Documenting a brute force attack on a default admin password, tracing the DNS and HTTP redirect to a malware site with tcpdump, and recommending 2FA and password controls. |
+| [**Cybersecurity Incident Report: Network Traffic Analysis**](./Cybersecurity%20Incident%20Report%20-%20Network%20Traffic%20Analysis.md) | Network Traffic Analysis | Analyzing a tcpdump log showing "udp port 53 unreachable", identifying the affected DNS, UDP, and ICMP protocols, and listing likely causes. |
 
 ### 🧯 Incident Response & SOC Operations
 
@@ -76,22 +84,26 @@ My work pairs **hands-on analysis** (access log review, phishing and malware esc
 
 | Domain | What I Do | Evidence |
 | :--- | :--- | :--- |
-| 🚨 **Incident Response & SOC Operations** | Follow playbooks, spot phishing red flags, verify malicious files against threat intelligence, document findings in tickets, and escalate. Apply the **NIST CSF** (Identify, Protect, Detect, Respond, Recover) to structure response plans. | SOC Level 1 Incident Report, ICMP Flood Plan |
-| 🔑 **Identity, Access & Privacy** | Review access logs, find stale accounts and excess privileges, and enforce **least privilege** and MFA. | Access Controls Investigation, Information Privacy Audit |
+| 🌐 **Network Attack Analysis** | Read tcpdump and packet capture logs, identify attacks such as SYN floods, trace DNS, TCP, UDP, ICMP, and HTTP behavior, and explain how an attack disrupts a service. | SYN Flood Analysis, Network Traffic Analysis, Brute Force Incident |
+| 🚨 **Incident Response & SOC Operations** | Follow playbooks, spot phishing red flags, verify malicious files against threat intelligence, document findings in tickets, and escalate. Apply the **NIST CSF** (Identify, Protect, Detect, Respond, Recover) to structure response plans. | SOC Level 1 Incident Report, ICMP Flood Plan, Brute Force Incident |
+| 🔑 **Identity, Access & Privacy** | Review access logs, find stale accounts and excess privileges, and enforce **least privilege**, password controls, and MFA/2FA. | Access Controls Investigation, Information Privacy Audit, Brute Force Incident |
 | 📊 **Governance, Risk & Compliance** | Build risk registers with likelihood and severity scoring, run vulnerability assessments, and keep accurate asset inventories. | Risk Register, Vulnerability Assessment, Asset Inventory |
-| 🌐 **Security Architecture & Network Defense** | Design segmented networks with perimeter firewalls, VPN, wireless security, and IDS/IPS placement, and plan defenses against flood attacks. | Security Infrastructure Design, ICMP Flood Plan |
+| 🏗️ **Security Architecture & Network Defense** | Design segmented networks with perimeter firewalls, VPN, wireless security, and IDS/IPS placement, and plan defenses against flood attacks. | Security Infrastructure Design, ICMP Flood Plan, SYN Flood Analysis |
 
 ---
 
 <!-- ===================== CONCEPTS ===================== -->
-## 🧰 Concepts & Frameworks
+## 🧰 Concepts, Tools & Frameworks
 
 ![NIST CSF](https://img.shields.io/badge/NIST%20CSF-0284C7?style=flat-square&logo=nist&logoColor=white)
 ![NIST SP 800-30](https://img.shields.io/badge/NIST%20SP%20800--30-0EA5E9?style=flat-square&logo=nist&logoColor=white)
 ![NIST SP 800-53](https://img.shields.io/badge/NIST%20SP%20800--53-1E90FF?style=flat-square&logo=nist&logoColor=white)
 ![MITRE ATT&CK](https://img.shields.io/badge/MITRE%20ATT%26CK-C8102E?style=flat-square&logo=target&logoColor=white)
+![tcpdump](https://img.shields.io/badge/tcpdump-0F172A?style=flat-square&logo=wireshark&logoColor=00D4FF)
+![TCP/IP](https://img.shields.io/badge/TCP%2FIP-334155?style=flat-square&logo=cisco&logoColor=white)
+![DNS](https://img.shields.io/badge/DNS-1E40AF?style=flat-square&logo=cloudflare&logoColor=white)
 ![Least Privilege](https://img.shields.io/badge/Least%20Privilege-0F172A?style=flat-square&logo=keycloak&logoColor=00D4FF)
-![MFA](https://img.shields.io/badge/MFA-394EFF?style=flat-square&logo=authy&logoColor=white)
+![MFA / 2FA](https://img.shields.io/badge/MFA%20%2F%202FA-394EFF?style=flat-square&logo=authy&logoColor=white)
 ![Firewall](https://img.shields.io/badge/Firewall-F97316?style=flat-square&logo=paloaltonetworks&logoColor=white)
 ![IDS/IPS](https://img.shields.io/badge/IDS%2FIPS-334155?style=flat-square&logo=snort&logoColor=white)
 ![VPN](https://img.shields.io/badge/VPN-EA7E20?style=flat-square&logo=openvpn&logoColor=white)
